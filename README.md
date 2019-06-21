@@ -1,21 +1,15 @@
 # JobQueue
 
-**TODO: Add description**
+## Setup
 
-## Installation
+- mix deps.get
+- mix ecto.reset
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `job_queue` to your list of dependencies in `mix.exs`:
+## Run tests
 
-```elixir
-def deps do
-  [
-    {:job_queue, "~> 0.1.0"}
-  ]
-end
-```
+- mix test
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/job_queue](https://hexdocs.pm/job_queue).
+## Try on iex
 
+- iex -S mix
+- JobQueue.get_jobs("ds")

@@ -1,7 +1,7 @@
 use Mix.Config
 
 config :job_queue,
-  data_dir: Path.expand("../_state/test/data", __DIR__)
+  ecto_repos: [JobQueue.Repo]
 
 config :ecto, :json_library, Jason
 
